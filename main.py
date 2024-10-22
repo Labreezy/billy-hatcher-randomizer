@@ -52,7 +52,6 @@ for i in range(len(WORLD_NAMES)):
     MISSION_OUT_TABLE.append(MISSION_NAMES_ROLLY[i])
     MISSION_OUT_TABLE.append(MISSION_NAMES_CHICK[i])
     MISSION_OUT_TABLE.append(MISSION_NAMES_BANTAM[i])
-    print(MISSION_OUT_TABLE[-8:])
 MISSION_OUT_TABLE_BYTES = b"".join(list(map(mission_name_to_bytestring, MISSION_OUT_TABLE)))
 code = WriteString(MISSION_OUT_TABLE_BYTES,WORLDS_BASE)
 
